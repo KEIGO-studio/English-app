@@ -1,0 +1,52 @@
+@use "_reset.scss";
+@use "_mq.scss";
+@use "_header.scss";
+@use "_footer.scss";
+
+html {
+  font-size: 30px;
+}
+button {
+  padding: 8px 14px;
+  margin-right: 2px;
+  margin-left: 2px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 2px solid rgb(206, 202, 202);
+  box-shadow: 0px 2px 0px 0px rgb(182, 179, 179);
+}
+li {
+  list-style: none;
+}
+.answer-button {
+  height: 100%;
+}
+.container {
+  margin: 50px;
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 600px;
+    #correct-area {
+      font-size: 0;
+      height: 60px;
+      padding: 10px 0;
+      margin-bottom: 50px;
+      border-top: 2px solid rgb(177, 172, 172);
+      border-bottom: 2px solid rgb(177, 172, 172);
+    }
+  }
+  .answer-area {
+    padding: 20px;
+    border: 2px solid rgb(199, 194, 194);
+    .answer-list {
+      font-size: 0;
+    }
+  }
+  #next-button {
+    display: inline-block;
+    float: right;
+    margin-top: 25px;
+  }
+}
